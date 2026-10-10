@@ -15,7 +15,7 @@ while command != "exit":
     if command == "install":
         if os.path.exists(target) and input("Are you sure? This action will delete "+target).lower() in ["yes", "y"]:
             shutil.rmtree(target)
-        path = "https://github.com/catlovergg1234/sdl-platformer"
+        path = "https://github.com/catlovergg1234/sdl-platformer/archive/refs/heads/refs.zip"
         with requests.get(path, stream=True) as resp:
             resp.raise_for_status()
 
